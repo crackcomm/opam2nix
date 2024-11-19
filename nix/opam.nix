@@ -14,6 +14,7 @@ in
 {
 	core = { cppo, dune, ocamlgraph, re, cmdliner }: ocamlPackages.buildDunePackage (base "core" {
 		propagatedBuildInputs = [ ocamlgraph re ];
+		nativeBuildInputs = [ cppo ];
 		buildInputs = [cppo cmdliner];
 	});
 
